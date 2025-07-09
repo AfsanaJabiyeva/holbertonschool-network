@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # display tcp udp ports
-ss -tulnp
+netstat -tulnp
 
