@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 #show all ipv4
-ip -o -4 addr show | awk '{print $4}' | cut -d/ -f1
+ip -o -4 addr show | awk '{print $4}' | cut -d/ -f1 | sed 's/$/$/'
+
 
