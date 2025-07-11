@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # change your home IP
-sudo sed -i '/^127\.0\.0\.1[[:space:]]\+localhost$/d' /etc/hosts
 
 localHost="/etc/hosts"
-echo "127.0.0.2        localhost" | sudo tee -a "$localHost" > /dev/null
-echo "8.8.8.8        facebook.com" | sudo tee -a "$localHost" > /dev/null
+echo "127.0.0.2 localhost" | sudo tee -a "$localHost" > /dev/null
+echo "8.8.8.8 facebook.com" | sudo tee -a "$localHost" > /dev/null
