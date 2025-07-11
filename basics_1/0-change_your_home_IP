@@ -2,6 +2,6 @@
 # change your home IP
 
 cp /etc/hosts ~/hosts.test
-echo "127.0.0.2 localhost" | sudo tee -a "$localHost" > ~/hosts.test
-echo "8.8.8.8 facebook.com" | sudo tee -a "$localHost" >> ~/hosts.test
+echo "127.0.0.2 localhost"  > ~/hosts.test
+echo "8.8.8.8 facebook.com"  >> ~/hosts.test
 cp -f ~/hosts.test /etc/hosts
